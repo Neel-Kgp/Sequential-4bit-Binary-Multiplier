@@ -69,6 +69,6 @@ To complement the hardware implementation, the same architecture is modeled in *
 
 ## Author
 
-**Neelesh**  
+**Neelesh Dorairaj**  
 Department of Electrical Engineering  
 Indian Institute of Technology Kharagpur
