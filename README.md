@@ -47,39 +47,12 @@ To complement the hardware implementation, the same architecture is modeled in *
 
 ---
 
-## Project Structure
-
-```text
-Sequential-4bit-Binary-Multiplier
-│
-├── rtl
-│   └── 4bit_multiplier.v
-│
-├── testbench
-│   └── 4bit_multiplier_tb.v
-│
-├── hardware
-│   ├── breadboard.jpg
-│   ├── circuit_diagram.png
-│   └── lab_report.pdf
-│
-├── waveforms
-│   └── multiplier_waveform.png
-│
-├── docs
-│   └── architecture.png
-│
-└── README.md
-```
-
----
-
 ## Simulation
 
 ### Compile
 
 ```bash
-iverilog -o sim rtl/4bit_multiplier.v testbench/4bit_multiplier_tb.v
+iverilog -o sim 4bit_multiplier.v testbench/4bit_multiplier_tb.v
 ```
 
 ### Run
@@ -93,48 +66,6 @@ vvp sim
 ```bash
 gtkwave multiplier.vcd
 ```
-
----
-
-## Example
-
-For:
-
-```
-Multiplicand = 3
-Multiplier   = 4
-```
-
-Operation:
-
-```
-0 + 3 = 3
-3 + 3 = 6
-6 + 3 = 9
-9 + 3 = 12
-```
-
-Final Product:
-
-```
-00001100₂ = 12₁₀
-```
-
----
-
-## Results
-
-### RTL Simulation
-
-*Insert GTKWave screenshot here.*
-
-### Hardware Implementation
-
-*Insert breadboard image here.*
-
-### Circuit Diagram
-
-*Insert circuit diagram here.*
 
 ---
 
@@ -155,15 +86,6 @@ Final Product:
 - FPGA/ASIC RTL Design
 - Digital System Design
 
----
-
-## Future Improvements
-
-- Shift-and-Add Multiplier
-- Booth Multiplier
-- Wallace Tree Multiplier
-- Parameterized N-bit Multiplier
-- Finite State Machine (FSM) Controller
 
 ---
 
