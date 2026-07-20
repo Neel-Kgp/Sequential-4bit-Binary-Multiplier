@@ -47,28 +47,6 @@ To complement the hardware implementation, the same architecture is modeled in *
 
 ---
 
-## Simulation
-
-### Compile
-
-```bash
-iverilog -o sim 4bit_multiplier.v testbench/4bit_multiplier_tb.v
-```
-
-### Run
-
-```bash
-vvp sim
-```
-
-### View Waveforms
-
-```bash
-gtkwave multiplier.vcd
-```
-
----
-
 ## Tools Used
 
 - Verilog HDL
